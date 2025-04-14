@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Tanha;
+    src: url('../font/Tanha.eot');
+    src: url('../font/Tanha.eot?#iefix') format('embedded-opentype'),
+         url('../font/Tanha.woff') format('woff'),
+         url('../font/Tanha.ttf') format('truetype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tanha;
+    direction: rtl;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    /* Colors */
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --dark-color: #252525;
+    --white-color: #fff;
+    --light-gray-color: #f2f2f2;
+
+    /* Site Max-Width */
+    --site-max-width: 1300px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--white-color);
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--primary-color);
+}
+nav{
+    display: flex;
+    padding: 15px 0 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: var(--site-max-width);
+}
+nav .nav-logo a{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+nav .nav-logo a img{
+    max-width: 55px;
+}
+nav .nav-logo h2{
+    color: white;
+    font-weight: 600px;
+    font-size: 32px;
+    font-family: Tanha;
+}
