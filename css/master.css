@@ -33,6 +33,7 @@ html{
 body{
     background-color: var(--white-color);
 }
+/* css for header  */
 header{
     position: fixed;
     top: 0;
@@ -62,3 +63,124 @@ nav .nav-logo h2{
     font-size: 32px;
     font-family: Tanha;
 }
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+nav ul li a{
+    display: block;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white-color);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+nav ul li a:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+nav label{
+    font-size: 32px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+label .menu-btn, label .close-btn{
+    display: none;
+}
+#click{
+    display: none;
+}
+
+
+
+/* hero css */
+.hero_section{
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+.hero_container{
+    display:flex ;
+    gap: 20px;
+    padding: 85px 20px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero_container .text_section h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+.hero_container .text_section h3{
+    font: size 35px; 
+    font-weight: 600;
+    color: var(--white-color);
+    margin-top:8px ;
+}
+.hero_container .text_section p{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white-color);
+    margin: 24px 0 40px;
+}
+
+.hero_container .text_section .hero_section_button{
+    display: flex;
+    gap: 24px;
+}
+.hero_container .text_section .hero_section_button .button{
+    padding: 8px 28px;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    -webkit-border-radius: 50PX;
+    -moz-border-radius: 50PX;
+    -ms-border-radius: 50PX;
+    -o-border-radius: 50PX;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+.hero_container .text_section .hero_section_button .button:last-child{
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: none;
+}
+.hero_container .text_section .hero_section_button .button:first-child:hover{
+    color: var(--white-color);
+    background: transparent;
+    border-color: var(--white-color);
+
+}
+.hero_container .text_section .hero_section_button .button:last-child:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+
+}
+.hero_container .hero_img_section{
+    max-width: 45%;
+}
+.hero_container .hero_img_section img{
+    width: 100%;
+}
+
+
+
+/* css for aboutUs */
