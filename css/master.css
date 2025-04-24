@@ -136,6 +136,8 @@ label .menu-btn, label .close-btn{
     padding: 85px 20px 20px;
     align-items: center;
     justify-content: space-between;
+    min-height: calc(100vh - 85px);
+
 }
 .hero_container .text_section h2{
     font-size: 40px;
@@ -153,6 +155,8 @@ label .menu-btn, label .close-btn{
     font-weight: 400;
     color: var(--white-color);
     margin: 24px 0 40px;
+    max-width: 70%;
+
 }
 
 .hero_container .text_section .hero_section_button{
@@ -270,7 +274,7 @@ label .menu-btn, label .close-btn{
 
 .why_us{
     background: var(--light-gray-color);
-    padding: 20px 60px 120px;
+    padding: 60px 20px 120px;
 }
 .why_us .why_container{
     display: flex;
@@ -278,20 +282,20 @@ label .menu-btn, label .close-btn{
     gap: 80px;
     align-items: center;
     flex-wrap: wrap;
-
 }
-.why_container .why_items{
-    width: 25%;
+.why_container .why_items img {
+    width: 30%;
+    margin-bottom: 10px;
+}
+.why_container .why_items {
+    width: calc(100% / 3 - 80px);
     padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 }
-.why_container .why_items img{
-    width: 30%;
-    margin-bottom: 10px;
-}
+
 .why_container .why_items .why_us_text{
     text-align: center;
 }
@@ -349,7 +353,7 @@ label .menu-btn, label .close-btn{
 /* css for contact */
 .contact{
     background: var(--light-gray-color);
-    padding: 20px 60px 120px;
+    padding: 60px 20px 100px;
 }
 .contact .contact_container{
     display: flex;
@@ -385,7 +389,7 @@ label .menu-btn, label .close-btn{
 .contact .contact_container .contact_form .field textarea{
     width: 100%;
     height: 200px;
-    pad: 12px;
+    padding: 12px;
     font-size: 16px;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -395,7 +399,7 @@ label .menu-btn, label .close-btn{
     border: 1px solid #ccc;
     resize: vertical;
 }
-.contact .contact_container .contact_form button{
+.contact .contact_container .contact_form .contact_button{
     padding: 8px 28px;
     border: 2px solid transparent;
     outline: none;
@@ -427,7 +431,7 @@ label .menu-btn, label .close-btn{
 }
 .contact .contact_container .contact_items i{
     font-size: 32px;
-    margin-bottom:5px;
+    margin-top:5px;
 }
 
 
@@ -436,7 +440,6 @@ footer{
     background: #1b1b1b;
     color: var(--white-color);
     padding: 60px 20px;
-    width: 100%;
 }
 .footer_section{
     display: flex;
@@ -460,7 +463,7 @@ footer{
     font-weight: 600;
 }
 .footer_section .useful_links ul li{
-    margin: 2px 0;
+    margin: 20px 0;
 }
 .footer_section .useful_links ul li a{
   color: var(--white-color);
@@ -622,7 +625,7 @@ footer{
     .section_title{
         padding: 50px 0;
     }
-    nav .nav-logo , .footer_section , .footer_logo a img{
+    nav .nav-logo , .footer_section .footer_logo a img{
         max-width: 45px;
     }
     nav .nav-logo {
